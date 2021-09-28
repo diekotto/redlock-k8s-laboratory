@@ -6,6 +6,11 @@
   "dependencies": {
     "axios": "^0.21.4",
     "cron": "^1.8.2",
-    "redlock": "^4.2.0"
+    "ioredis": "^4.27.9",
+    "redlock": "^4.2.0",
+    "uid": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/redlock": "^4.0.2"
   }
 }

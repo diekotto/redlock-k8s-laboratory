@@ -1,0 +1,16 @@
+{
+  "name": "redlock-k8s-laboratory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:diekmrcoin/redlock-k8s-laboratory.git",
+  "author": "Diego Maroto <diego.diemg@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && yarn up",
+    "up": "docker-compose up -d",
+    "down": "docker-compose down",
+    "build": "docker-compose build",
+    "logs:web": "docker logs web-server",
+    "logs:cron": "docker logs cron-service"
+  }
+}
