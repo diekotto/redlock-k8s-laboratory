@@ -9,4 +9,7 @@ app.get ('/:tagId', function (req, res) {
 const port = process.env.NODE_PORT || 3000;
 app.listen (port, () => {
   console.log (`Express started on port ${port}`);
+  setInterval (() => {
+    console.log ('...');
+  }, 25000);
 });

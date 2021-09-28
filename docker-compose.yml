@@ -15,6 +15,9 @@ services:
     depends_on:
       - web-server
       - redis
+    environment:
+      WEB_SERVER_HOST: "web-server"
+      REDIS_HOST: "redis"
 
   redis:
     container_name: redis

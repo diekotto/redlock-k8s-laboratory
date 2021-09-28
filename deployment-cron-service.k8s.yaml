@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cron-service-redlock-laboratory
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: cron-service-app
+  template:
+    metadata:
+      labels:
+        app: cron-service-app
+    spec:
+      containers:
+        - name: redlock-cron-service
+          imagePullPolicy: IfNotPresent
+          image: redlock-cron-service
+          env:
+            - name: WEB_SERVER_HOST
+              value: "web-server-service.default.svc.cluster.local"
+            - name: REDIS_HOST
+              value: "redis-service.default.svc.cluster.local"
+          
