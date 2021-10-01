@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: redlock-web-server
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Never
           image: redlock-web-server
           ports:
             - containerPort: 80

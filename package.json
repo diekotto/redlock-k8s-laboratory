@@ -7,10 +7,12 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn build && yarn up",
+    "build": "docker-compose build",
     "up": "docker-compose up -d",
     "down": "docker-compose down",
-    "build": "docker-compose build",
-    "logs:web": "docker logs web-server",
-    "logs:cron": "docker logs cron-service"
+    "kube:up": "kubectl create -f deployment-redis.k8s.yaml -f deployment-web-server.k8s.yaml -f deployment-cron-service.k8s.yaml",
+    "kube:down": "kubectl delete -f deployment-web-server.k8s.yaml -f deployment-cron-service.k8s.yaml -f deployment-redis.k8s.yaml",
+    "logs:web": "commands/log-web.sh",
+    "logs:redis": "commands/log-redis.sh"
   }
 }

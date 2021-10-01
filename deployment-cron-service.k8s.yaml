@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: redlock-cron-service
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Never
           image: redlock-cron-service
           env:
             - name: WEB_SERVER_HOST

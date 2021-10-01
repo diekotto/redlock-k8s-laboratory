@@ -12,6 +12,18 @@
   resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.36.tgz#00d9301d4dc35c2f6465a8aec634bb533674c652"
   integrity sha512-HBNx4lhkxN7bx6P0++W8E289foSu8kO8GCk2unhuVggO+cE7rh9DhZUyPhUxNRG9m+5B5BTKxZQ5ZP92x/mx9Q==
 
+"@types/ioredis@^4.27.5":
+  version "4.27.5"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.27.5.tgz#f3bd216d8fdd02e831fbac0fbdcf418a4a46b0f9"
+  integrity sha512-RA8Ba0MPNjCSwukqJlapzu4KRT/MokzauUHbHAfOJtgw93pZ0vX/BBmYvodp2kzIU5bwYycH9n6pGBJaysPqxQ==
+  dependencies:
+    "@types/node" "*"
+
+"@types/node@*":
+  version "16.10.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.10.2.tgz#5764ca9aa94470adb4e1185fe2e9f19458992b2e"
+  integrity sha512-zCclL4/rx+W5SQTzFs9wyvvyCwoK9QtBpratqz2IYJ3O8Umrn0m3nsTv0wQBk9sRGpvUe9CwPDrQFB10f1FIjQ==
+
 "@types/redlock@^4.0.2":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@types/redlock/-/redlock-4.0.2.tgz#3ae94bc236d4cff12815b62b9b9e51a8e7f9f25f"
@@ -91,6 +103,11 @@ lodash.isarguments@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
   integrity sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
+
+luxon@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-2.0.2.tgz#11f2cd4a11655fdf92e076b5782d7ede5bcdd133"
+  integrity sha512-ZRioYLCgRHrtTORaZX1mx+jtxKtKuI5ZDvHNAmqpUzGqSrR+tL4FVLn/CUGMA3h0+AKD1MAxGI5GnCqR5txNqg==
 
 moment-timezone@^0.5.x:
   version "0.5.33"
